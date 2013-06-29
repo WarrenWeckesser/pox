@@ -1,0 +1,10 @@
+language: python
+ - "2.5"
+ - "2.6"
+ - "2.7"
+
+before_script:
+ - chmod u+x tests/test_shutils.py
+ - chmod u+x tests/test_utils.py
+
+script: make -C tests -f Make.mm test
